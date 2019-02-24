@@ -113,6 +113,48 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &479933490
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4304732704726168, guid: d5143157d4e292b45b32009e19befceb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304732704726168, guid: d5143157d4e292b45b32009e19befceb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304732704726168, guid: d5143157d4e292b45b32009e19befceb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304732704726168, guid: d5143157d4e292b45b32009e19befceb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304732704726168, guid: d5143157d4e292b45b32009e19befceb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304732704726168, guid: d5143157d4e292b45b32009e19befceb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304732704726168, guid: d5143157d4e292b45b32009e19befceb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304732704726168, guid: d5143157d4e292b45b32009e19befceb, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5143157d4e292b45b32009e19befceb, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1629889470
 Prefab:
   m_ObjectHideFlags: 0
@@ -206,15 +248,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4948126522438068, guid: 74ab5e03e26c3da41bf951cde68b2152, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.317
       objectReference: {fileID: 0}
     - target: {fileID: 4948126522438068, guid: 74ab5e03e26c3da41bf951cde68b2152, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 2.818
       objectReference: {fileID: 0}
     - target: {fileID: 4948126522438068, guid: 74ab5e03e26c3da41bf951cde68b2152, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.915
       objectReference: {fileID: 0}
     - target: {fileID: 4948126522438068, guid: 74ab5e03e26c3da41bf951cde68b2152, type: 2}
       propertyPath: m_LocalRotation.x
