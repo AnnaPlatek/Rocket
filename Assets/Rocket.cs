@@ -27,14 +27,14 @@ public class Rocket : MonoBehaviour {
         if(Input.GetKey(KeyCode.A))
         {
             print("lewo");
-            transform.Rotate(Vector3.forward*Time.deltaTime);
+            transform.Rotate(Vector3.forward*Time.deltaTime*50);
 
         }
 
         else if (Input.GetKey(KeyCode.D))
         {
             print("prawo");
-            transform.Rotate(Vector3.back*Time.deltaTime);
+            transform.Rotate(Vector3.back*Time.deltaTime*50);
         }
     }
 }
