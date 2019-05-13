@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23892580024645190}
   - component: {fileID: 136682278217294626}
   m_Layer: 0
-  m_Name: Booster
+  m_Name: Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 23204780071328756}
   - component: {fileID: 136003179798508544}
   m_Layer: 0
-  m_Name: Booster2
+  m_Name: Leg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,9 +55,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4304732704726168}
-  - component: {fileID: 54485953133762406}
   - component: {fileID: 82899841724203418}
   - component: {fileID: 114843555146479782}
+  - component: {fileID: 54524205034252254}
+  - component: {fileID: 114034886131728804}
   m_Layer: 0
   m_Name: Rocket_Ship
   m_TagString: Untagged
@@ -77,7 +78,7 @@ GameObject:
   - component: {fileID: 23179318701365886}
   - component: {fileID: 135304872717959738}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Nose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +96,7 @@ GameObject:
   - component: {fileID: 23267308889468756}
   - component: {fileID: 136530976016643650}
   m_Layer: 0
-  m_Name: Booster3
+  m_Name: Leg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,7 +114,7 @@ GameObject:
   - component: {fileID: 23898634869370024}
   - component: {fileID: 136641906996069824}
   m_Layer: 0
-  m_Name: Rochet_Body
+  m_Name: Rocket_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,20 +413,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1354794933468962}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54485953133762406
+--- !u!54 &54524205034252254
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1410025307696622}
   serializedVersion: 2
-  m_Mass: 0.05
-  m_Drag: 0
+  m_Mass: 1
+  m_Drag: 0.2
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!82 &82899841724203418
 AudioSource:
@@ -522,6 +523,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114034886131728804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1410025307696622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c606441ecc440a41ab26fe8769b855d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rcsThrust: 50
+  mainThrust: 1
 --- !u!114 &114843555146479782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -533,6 +547,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c606441ecc440a41ab26fe8769b855d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rcsThrust: 50
+  mainThrust: 50
 --- !u!135 &135304872717959738
 SphereCollider:
   m_ObjectHideFlags: 1
