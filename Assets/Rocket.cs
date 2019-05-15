@@ -21,6 +21,24 @@ public class Rocket : MonoBehaviour {
         Rotate();
 	}
 
+    void OnCollisionEnter(Collision collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Friendly":
+                //do nothing
+                print("OK");
+                break;
+            case "Fuel":
+                print("Fuel");
+                break;
+            default:
+                print("Dead");
+                //kill player
+                break;
+        }
+    }
+
     private void Thrust()
     {
         //float movementSpeed = mainThrust * Time.deltaTime;
