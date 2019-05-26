@@ -304,11 +304,11 @@ Transform:
   - {fileID: 737641448}
   - {fileID: 731879188}
   - {fileID: 1448862791}
+  - {fileID: 1173753685}
+  - {fileID: 1444169677}
+  - {fileID: 1305080374}
   - {fileID: 557370822}
   - {fileID: 1646173539}
-  - {fileID: 1173753685}
-  - {fileID: 1305080374}
-  - {fileID: 1444169677}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -444,7 +444,7 @@ Prefab:
     - target: {fileID: 114034886131728804, guid: d5143157d4e292b45b32009e19befceb,
         type: 2}
       propertyPath: mainThrust
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1410025307696622, guid: d5143157d4e292b45b32009e19befceb, type: 2}
       propertyPath: m_TagString
@@ -455,7 +455,13 @@ Prefab:
       propertyPath: rcsThrust
       value: 20
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114034886131728804, guid: d5143157d4e292b45b32009e19befceb,
+        type: 2}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: bdcadcf5572f0724480ceee1f3bddae9, type: 3}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: d5143157d4e292b45b32009e19befceb, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &524803741
