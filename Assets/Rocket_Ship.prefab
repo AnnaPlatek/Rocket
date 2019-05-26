@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 114034886131728804}
   m_Layer: 0
   m_Name: Rocket_Ship
-  m_TagString: Untagged
+  m_TagString: Friendly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +166,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1410025307696622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: 3.06, z: 0.01}
+  m_LocalPosition: {x: 17.3, y: 5.2, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4656408211019570}
@@ -534,8 +534,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c606441ecc440a41ab26fe8769b855d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rcsThrust: 50
-  mainThrust: 1
+  rcsThrust: 20
+  mainThrust: 7
 --- !u!114 &114843555146479782
 MonoBehaviour:
   m_ObjectHideFlags: 1
