@@ -626,8 +626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c606441ecc440a41ab26fe8769b855d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rcsThrust: 25
-  mainThrust: 35
+  rcsThrust: 100
+  mainThrust: 1500
   mainEngine: {fileID: 8300000, guid: bdcadcf5572f0724480ceee1f3bddae9, type: 3}
   audioSuccess: {fileID: 8300000, guid: 3bb359fbf8b13064cb899c86ad8ed03d, type: 3}
   audioFail: {fileID: 8300000, guid: c245f96e961e6be47b251755e0c35e92, type: 3}
