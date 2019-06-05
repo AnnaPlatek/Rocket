@@ -18,6 +18,8 @@ public class Rocket : MonoBehaviour {
     AudioSource audioSource;
     enum State { Alive, Dying, Transcending}
     State state = State.Alive;
+    enum Crash { On, Off }
+    Crash crash = Crash.On;
 
 	// Use this for initialization
 	void Start () {
@@ -34,7 +36,29 @@ public class Rocket : MonoBehaviour {
             RespondToRotateInput();
             }
 
+        RespondToDebugKeys();
+
 	}
+
+    private void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            if (crash == Crash.On)
+            {
+                crash = Crash.Off;
+            }
+            else
+            {
+                crash = Crash.On;
+            }
+
+        }
+    }
 
     void OnCollisionEnter(Collision collision)
     {
@@ -63,11 +87,20 @@ public class Rocket : MonoBehaviour {
 
     private void StartDeathSequence()
     {
-        state = State.Dying;
-        Invoke("LoadFirstLevel", levelLoadDelay); //parameterise time
-        audioSource.Stop();
-        audioSource.PlayOneShot(audioFail);
-        particleDeath.Play();
+        if (crash == Crash.On)
+        {
+            state = State.Dying;
+            Invoke("LoadFirstLevel", levelLoadDelay); //parameterise time
+            audioSource.Stop();
+            audioSource.PlayOneShot(audioFail);
+            particleDeath.Play();
+        }
+
+        else
+        {
+            return;
+        }
+
     }
 
     private void StartSuccessSequence()
