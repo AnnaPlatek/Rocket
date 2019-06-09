@@ -17,9 +17,9 @@ public class Rocket : MonoBehaviour {
     Rigidbody rigidBody;
     AudioSource audioSource;
     enum State { Alive, Dying, Transcending}
-    State state = State.Alive;
+    [SerializeField] State state = State.Alive;
     enum Crash { On, Off }
-    Crash crash = Crash.On;
+    [SerializeField] Crash crash = Crash.On;
 
 	// Use this for initialization
 	void Start () {
@@ -36,7 +36,12 @@ public class Rocket : MonoBehaviour {
             RespondToRotateInput();
             }
 
-        RespondToDebugKeys();
+        if (Debug.isDebugBuild)
+        {
+            RespondToDebugKeys();
+        }
+
+       
 
 	}
 
@@ -119,7 +124,17 @@ public class Rocket : MonoBehaviour {
 
     private void LoadNextLevel()
     {
-        SceneManager.LoadScene(1); // todo load more levels (n+1) 
+        // current scene index
+        int n = SceneManager.GetActiveScene().buildIndex;
+        print(n);
+        int nextSceneIndex = n + 1;
+        int maxSceneIndex = SceneManager.sceneCountInBuildSettings;
+        if (nextSceneIndex < maxSceneIndex)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+            LoadFirstLevel();
     }
 
     private void RespondToThrustInput()

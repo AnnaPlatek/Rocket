@@ -305,6 +305,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114034886131728804, guid: d5143157d4e292b45b32009e19befceb,
+        type: 2}
+      propertyPath: rcsThrust
+      value: 175
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5143157d4e292b45b32009e19befceb, type: 2}
   m_IsPrefabAsset: 0
